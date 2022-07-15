@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+<h1>About This Project</h1>
+<h2>Shop Online</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ecommerece app where user can list his products to sell online
 
-## Available Scripts
+Other then that user can order products as well. User cannot order his own product.
 
-In the project directory, you can run:
+User can add comment or other people products
 
-### `npm start`
+Cart is implemented which is a session based which will be destroyed as soon as session chenges or get destroyed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Devise is usad for user authentication
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Stripe is used as a payment gateway
 
-### `npm test`
+Deployment on heroku
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1>Prerequisites</h1>
+You must have rails 5 and ruby version > 2 installed. other then that you will need cloudinary and stripe developers account
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h1>Installation</h1>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ Get a free API Key from cloudinary and stripe
+ Clone the repo
+ git clone https://github.com/MuhammadAbdullah191/ecommerece.git
+ run bundle install
+ Enter your API in .env in following pattern
+ <br/>
+ // enter cloudinary key
+ CLOUD_NAME= "ENTER YOUR API"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ // enter stripe key
+ STRIPE_KEY="ENTER YOUR API"
+ <br/>
+ // add following postgress credintials
+ <br/>
+ POSTGRES_USER='ENTER YOUR User name'
+ <br/>
+// If you declared a password when creating the database:
+<br/>
+// POSTGRES_PASSWORD='password'
+<br/>
+POSTGRES_HOST='ENTER YOUR host'
+<br/>
+POSTGRES_DB='ENTER YOUR DB_NAME
 
-### `npm run eject`
+// ADD FOLLOWING FOR DEVISE MAILER
+<br/>
+SENDMAIL_PASSWORD="PASSWORD HERE"
+<br/>
+SENDMAIL_USERNAME="Email here"
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Bundle install and then start rails server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h1>Contact</h1>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact me at @abdullah.badar@devsinc.com
